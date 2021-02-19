@@ -61,8 +61,8 @@ function setup(){
 
 function draw(){
     Engine.update(engine);
-    text("Drag and release the stone to launch it.", 10, 10, 400, 400);
     background(0);
+    text("Drag and release the stone to launch it.", 10, 10, 400, 400);
 
     push();
     translate(polygon.position.x, polygon.position.y);
