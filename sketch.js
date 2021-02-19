@@ -14,7 +14,7 @@ function preload(){
 }
 
 function setup(){
-    var canvas = createCanvas(1200,400)
+    var canvas = createCanvas(800,400)
     engine = Engine.create();
     world = engine.world;
 
@@ -62,11 +62,11 @@ function setup(){
 function draw(){
     Engine.update(engine);
     background(0);
-    
+
     noStroke();
-    textSize(35);
+    textSize(25);
     fill("white");
-    text("Drag and release to launch the stone", width-300, 50);
+    text("Drag and release to launch the stone", 0, 50);
 
     push();
     translate(polygon.position.x, polygon.position.y);
