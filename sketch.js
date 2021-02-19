@@ -57,12 +57,12 @@ function setup(){
     slingShot = new SlingShot(polygon, {x:200, y:200});
 
     //Engine.run(engine);
+    text("Drag and release the stone to launch it.", 10, 10);
 }
 
 function draw(){
     Engine.update(engine);
     background(0);
-    text("Drag and release the stone to launch it.", 10, 10);
 
     push();
     translate(polygon.position.x, polygon.position.y);
